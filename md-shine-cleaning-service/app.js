@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 function initMobileMenu() {
   const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const closeBtn = document.getElementById('mobile-drawer-close');
   const drawer = document.getElementById('mobile-drawer');
   if (!toggleBtn || !drawer) return;
 
@@ -24,16 +25,21 @@ function initMobileMenu() {
     drawer.setAttribute('aria-hidden', isExpanded);
   };
 
+  const closeMenu = () => {
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    drawer.classList.remove('active');
+    drawer.setAttribute('aria-hidden', 'true');
+  };
+
   toggleBtn.addEventListener('click', toggleMenu);
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeMenu);
+  }
 
   // Close drawer when clicking any mobile nav link
   const mobileLinks = drawer.querySelectorAll('a');
   mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      toggleBtn.setAttribute('aria-expanded', 'false');
-      drawer.classList.remove('active');
-      drawer.setAttribute('aria-hidden', 'true');
-    });
+    link.addEventListener('click', closeMenu);
   });
 
   // Close when clicking outside content
