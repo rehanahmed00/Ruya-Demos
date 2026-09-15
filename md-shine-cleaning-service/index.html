@@ -4,28 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MD-Shine Cleaning Service LLC | Rockville & Potomac, MD</title>
-  <meta name="description" content="Residential cleaning in Rockville, Potomac and surrounding Montgomery County areas. Standard, deep, move-in/move-out, recurring and seasonal cleaning. Call or text (240) 308-5977 for a free quote.">
+  <meta name="description" content="Residential cleaning in Rockville, Potomac and surrounding Montgomery County areas. Standard, deep, move-in/move-out, recurring and seasonal cleaning.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Demo Notice Banner -->
-  <div class="demo-notice-bar" role="region" aria-label="Demo Notice">
-    <div class="container demo-notice-content">
-      <span>✨ <strong>PREVIEW CONCEPT WEBSITE</strong> • NOT THE OFFICIAL MD-SHINE WEBSITE</span>
-    </div>
-  </div>
-
-  <!-- Offer Ribbon -->
-  <div class="promo-bar">
+  <!-- Top Announcement Bar -->
+  <aside class="promo-bar" aria-label="Special Offer">
     <div class="container promo-content">
       <span>A fresh start for your home. <strong>30% off your first cleaning.</strong></span>
-      <a href="#quote" class="promo-link">Claim Offer &rarr;</a>
+      <a href="#quote" class="promo-link">Get a quote &rarr;</a>
     </div>
-  </div>
+  </aside>
 
   <!-- Header / Navigation -->
   <header class="header" id="top-header">
@@ -39,17 +32,13 @@
         <a href="#services" class="nav-link">Services</a>
         <a href="#approach" class="nav-link">Our Approach</a>
         <a href="#area" class="nav-link">Service Area</a>
-        <a href="#quote" class="nav-link">Quote Inquiry</a>
       </nav>
 
       <div class="header-actions">
-        <a href="tel:+12403085977" class="btn btn-outline btn-sm header-phone-btn">
-          <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-          </svg>
-          <span>(240) 308-5977</span>
+        <a href="tel:+12403085977" class="btn btn-outline btn-sm header-call-btn">
+          <span>Call (240) 308-5977</span>
         </a>
-        <a href="#quote" class="btn btn-primary btn-sm header-quote-btn">Get Free Quote</a>
+        <a href="#quote" class="btn btn-primary btn-sm">Get a Free Quote</a>
         <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -63,22 +52,19 @@
   <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
     <div class="mobile-drawer-content">
       <div class="mobile-drawer-header">
-        <span class="mobile-drawer-brand">Menu</span>
+        <span class="mobile-drawer-title">Navigation</span>
         <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close menu">&times;</button>
       </div>
       <nav class="mobile-nav" aria-label="Mobile Navigation">
         <a href="#services" class="mobile-nav-link">Services</a>
         <a href="#approach" class="mobile-nav-link">Our Approach</a>
         <a href="#area" class="mobile-nav-link">Service Area</a>
-        <a href="#quote" class="mobile-nav-link">Quote Inquiry</a>
+        <a href="#quote" class="mobile-nav-link">Get a Quote</a>
       </nav>
       <div class="mobile-drawer-footer">
-        <div class="mobile-contact-card">
-          <p class="mobile-contact-title">Direct Contact</p>
-          <a href="tel:+12403085977" class="btn btn-primary btn-block mb-2">Call (240) 308-5977</a>
-          <a href="sms:+12403085977" class="btn btn-outline btn-block mb-2">Text for a Quote</a>
-          <a href="mailto:mdshineclean@gmail.com" class="mobile-email-link">mdshineclean@gmail.com</a>
-        </div>
+        <a href="tel:+12403085977" class="btn btn-primary btn-block mb-2">Call (240) 308-5977</a>
+        <a href="sms:+12403085977" class="btn btn-outline btn-block mb-2">Text for a Quote</a>
+        <a href="mailto:mdshineclean@gmail.com" class="mobile-drawer-email">mdshineclean@gmail.com</a>
       </div>
     </div>
   </div>
@@ -88,10 +74,7 @@
     <section class="hero-section">
       <div class="container hero-container">
         <div class="hero-copy">
-          <div class="badge-pill">
-            <span class="badge-dot"></span>
-            <span>YOUR LOCAL HOME CLEANING SERVICE</span>
-          </div>
+          <p class="hero-eyebrow">YOUR LOCAL HOME CLEANING SERVICE</p>
           <h1 class="hero-heading">
             A clean home.<br>A better <em>life.</em>
           </h1>
@@ -101,80 +84,51 @@
 
           <div class="hero-actions">
             <a href="#quote" class="btn btn-primary btn-lg">
-              <span>Start Free Quote Inquiry</span>
-              <svg class="icon-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
+              <span>Get your free quote</span>
+              <span aria-hidden="true">&rarr;</span>
             </a>
-            <a href="tel:+12403085977" class="btn btn-secondary btn-lg">
-              <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              <span>Call (240) 308-5977</span>
-            </a>
+            <a href="#services" class="btn btn-outline btn-lg">Explore services</a>
           </div>
 
-          <!-- Verified Local Seal -->
-          <div class="hero-seal-card">
-            <div class="seal-sparkle" aria-hidden="true">✦</div>
-            <div class="seal-text">
+          <div class="hero-note">
+            <span class="seal" aria-hidden="true">✦</span>
+            <div class="hero-note-text">
               <strong>We Clean. You Relax.</strong>
-              <span>Rockville, Potomac &amp; Montgomery County, MD</span>
+              <span>Rockville, Potomac &amp; surrounding areas</span>
             </div>
           </div>
         </div>
 
         <div class="hero-visual">
-          <div class="hero-image-wrapper">
+          <div class="hero-image-frame">
             <img 
               src="https://images.unsplash.com/photo-1722247482035-73d55ee3d258?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=2400" 
               alt="A bright, tidy living room with comfortable seating and natural light" 
               class="hero-img"
               loading="eager"
             >
-            <div class="hero-floating-card">
-              <div class="floating-badge-icon">✦</div>
-              <div class="floating-badge-text">
-                <strong>30% Off First Cleaning</strong>
-                <span>More time for what matters</span>
-              </div>
+            <div class="hero-image-label">
+              <span aria-hidden="true">✦</span> More time for what matters.
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Verified Quick Facts Bar -->
-    <section class="trust-bar-section" aria-label="Verified Business Facts">
-      <div class="container trust-bar-grid">
-        <div class="trust-item">
-          <div class="trust-check">✓</div>
-          <div class="trust-item-text">
-            <strong>6+ Years Experience</strong>
-            <span>Dedicated home cleaning</span>
-          </div>
+    <!-- Verified Business Facts Bar -->
+    <section class="benefits-bar" aria-label="Business overview">
+      <div class="container benefits-container">
+        <div class="benefit-item">
+          <span class="benefit-check" aria-hidden="true">✓</span>
+          <span>6+ years of cleaning experience</span>
         </div>
-        <div class="trust-item">
-          <div class="trust-check">✓</div>
-          <div class="trust-item-text">
-            <strong>Locally Owned</strong>
-            <span>Based right in Maryland</span>
-          </div>
+        <div class="benefit-item">
+          <span class="benefit-check" aria-hidden="true">✓</span>
+          <span>Locally owned</span>
         </div>
-        <div class="trust-item">
-          <div class="trust-check">✓</div>
-          <div class="trust-item-text">
-            <strong>Fits Your Routine</strong>
-            <span>Weekly, biweekly &amp; monthly options</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-check">✓</div>
-          <div class="trust-item-text">
-            <strong>Rockville &amp; Potomac</strong>
-            <span>Montgomery County &amp; nearby</span>
-          </div>
+        <div class="benefit-item">
+          <span class="benefit-check" aria-hidden="true">✓</span>
+          <span>Cleaning that fits your routine</span>
         </div>
       </div>
     </section>
@@ -182,210 +136,113 @@
     <!-- Services Section -->
     <section class="section services-section" id="services">
       <div class="container">
-        <div class="section-header">
-          <div class="section-header-copy">
+        <div class="section-heading">
+          <div>
             <p class="section-eyebrow">A LITTLE HELP. A BIG DIFFERENCE.</p>
             <h2 class="section-title">The right clean<br>for your home.</h2>
           </div>
-          <p class="section-lead">
-            From everyday upkeep to a fresh start, choose the cleaning that suits your space and schedule.
+          <p class="section-sub">
+            From everyday upkeep to a fresh start, choose the cleaning that suits your space.
           </p>
         </div>
 
         <div class="services-grid">
-          <!-- Service 1: Standard Cleaning -->
-          <article class="service-card" data-service="Standard Cleaning">
-            <div class="service-card-top">
-              <span class="service-tag">01 / EVERYDAY CARE</span>
-              <div class="service-icon-wrap" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
-              </div>
-            </div>
-            <h3 class="service-title">Standard cleaning</h3>
-            <p class="service-desc">
-              A regular refresh for the spaces you use most. Thorough dusting, vacuuming, mopping, plus comprehensive kitchen and bathroom cleaning.
+          <!-- 01 / EVERYDAY CARE -->
+          <article class="service-card">
+            <span class="service-number">01 / EVERYDAY CARE</span>
+            <h3 class="service-name">Standard cleaning</h3>
+            <p class="service-text">
+              A regular refresh for the spaces you use most. Dusting, vacuuming, mopping, plus kitchen and bathroom cleaning.
             </p>
-            <ul class="service-highlights">
-              <li>Living spaces &amp; high-traffic areas</li>
-              <li>Kitchen surfaces, countertops &amp; sink</li>
-              <li>Bathroom sanitization &amp; fixtures</li>
-              <li>Floor vacuuming and damp mopping</li>
-            </ul>
-            <div class="service-footer">
-              <a href="#quote" class="service-cta select-service-btn" data-select-service="Standard Cleaning">
-                <span>Inquire for Quote</span>
-                <span class="cta-arrow">&rarr;</span>
-              </a>
-            </div>
+            <a href="#quote" class="service-action-link" data-service-select="Standard cleaning">
+              <span>Ask for a quote</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </article>
 
-          <!-- Service 2: Deep Cleaning -->
-          <article class="service-card" data-service="Deep Cleaning">
-            <div class="service-card-top">
-              <span class="service-tag">02 / A DEEPER RESET</span>
-              <div class="service-icon-wrap" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                </svg>
-              </div>
-            </div>
-            <h3 class="service-title">Deep cleaning</h3>
-            <p class="service-desc">
-              Extra attention to buildup and overlooked details. The ideal place to start when your home needs a more thorough, detailed reset.
+          <!-- 02 / A DEEPER RESET -->
+          <article class="service-card">
+            <span class="service-number">02 / A DEEPER RESET</span>
+            <h3 class="service-name">Deep cleaning</h3>
+            <p class="service-text">
+              Extra attention to buildup and overlooked details. A good place to start when your home needs a more thorough clean.
             </p>
-            <ul class="service-highlights">
-              <li>Detailed baseboards, trims &amp; corners</li>
-              <li>Appliance exteriors &amp; grease buildup</li>
-              <li>Deep tile, grout &amp; soap scum attention</li>
-              <li>Recommended before regular service</li>
-            </ul>
-            <div class="service-footer">
-              <a href="#quote" class="service-cta select-service-btn" data-select-service="Deep Cleaning">
-                <span>Inquire for Quote</span>
-                <span class="cta-arrow">&rarr;</span>
-              </a>
-            </div>
+            <a href="#quote" class="service-action-link" data-service-select="Deep cleaning">
+              <span>Ask for a quote</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </article>
 
-          <!-- Service 3: Move-In / Move-Out -->
-          <article class="service-card" data-service="Move-in / Move-out">
-            <div class="service-card-top">
-              <span class="service-tag">03 / YOUR NEXT CHAPTER</span>
-              <div class="service-icon-wrap" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="16 16 12 12 8 16"></polyline>
-                  <line x1="12" y1="12" x2="12" y2="21"></line>
-                  <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
-                </svg>
-              </div>
-            </div>
-            <h3 class="service-title">Move-in / move-out</h3>
-            <p class="service-desc">
-              Start fresh in your new space or leave your previous residence pristine for what comes next. Tell us about your move and cleaning timeline.
+          <!-- 03 / YOUR NEXT CHAPTER -->
+          <article class="service-card">
+            <span class="service-number">03 / YOUR NEXT CHAPTER</span>
+            <h3 class="service-name">Move-in / move-out</h3>
+            <p class="service-text">
+              Start fresh in your new space or leave your old one ready for what comes next. Tell us about your move and cleaning needs.
             </p>
-            <ul class="service-highlights">
-              <li>Empty space corner-to-corner cleaning</li>
-              <li>Inside cabinets, drawers &amp; shelves</li>
-              <li>Realtor &amp; landlord handover readiness</li>
-              <li>Flexible move-day coordination</li>
-            </ul>
-            <div class="service-footer">
-              <a href="#quote" class="service-cta select-service-btn" data-select-service="Move-in / Move-out">
-                <span>Inquire for Quote</span>
-                <span class="cta-arrow">&rarr;</span>
-              </a>
-            </div>
+            <a href="#quote" class="service-action-link" data-service-select="Move-in / move-out">
+              <span>Ask for a quote</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </article>
 
-          <!-- Service 4: Recurring Cleaning -->
-          <article class="service-card" data-service="Recurring Cleaning">
-            <div class="service-card-top">
-              <span class="service-tag">04 / KEEP THE GOOD FEELING</span>
-              <div class="service-icon-wrap" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="23 4 23 10 17 10"></polyline>
-                  <polyline points="1 20 1 14 7 14"></polyline>
-                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
-                </svg>
-              </div>
-            </div>
-            <h3 class="service-title">Recurring cleaning</h3>
-            <p class="service-desc">
-              Make a sparkling clean home a effortless part of your life. Ask about weekly, biweekly, or monthly visits and current availability.
+          <!-- 04 / KEEP THE GOOD FEELING -->
+          <article class="service-card">
+            <span class="service-number">04 / KEEP THE GOOD FEELING</span>
+            <h3 class="service-name">Recurring cleaning</h3>
+            <p class="service-text">
+              Make a clean home part of your routine. Ask about weekly, biweekly, or monthly visits and current availability.
             </p>
-            <ul class="service-highlights">
-              <li>Weekly, biweekly or monthly visits</li>
-              <li>Consistent, reliable home care</li>
-              <li>Subject to current schedule availability</li>
-              <li>Ongoing upkeep tailored to you</li>
-            </ul>
-            <div class="service-footer">
-              <a href="#quote" class="service-cta select-service-btn" data-select-service="Recurring Cleaning">
-                <span>Inquire for Quote</span>
-                <span class="cta-arrow">&rarr;</span>
-              </a>
-            </div>
+            <a href="#quote" class="service-action-link" data-service-select="Recurring cleaning">
+              <span>Ask for a quote</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </article>
 
-          <!-- Service 5: Seasonal Cleaning (Span card) -->
-          <article class="service-card service-card-wide" data-service="Seasonal Cleaning">
-            <div class="service-card-top">
-              <span class="service-tag">05 / A SEASONAL REFRESH</span>
-              <div class="service-icon-wrap" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="5"></circle>
-                  <line x1="12" y1="1" x2="12" y2="3"></line>
-                  <line x1="12" y1="21" x2="12" y2="23"></line>
-                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                  <line x1="1" y1="12" x2="3" y2="12"></line>
-                  <line x1="21" y1="12" x2="23" y2="12"></line>
-                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-              </div>
-            </div>
-            <div class="wide-service-layout">
-              <div class="wide-service-text">
-                <h3 class="service-title">Seasonal cleaning</h3>
-                <p class="service-desc">
-                  Refresh your home for a new season. From comprehensive spring cleaning to holiday hosting preparations, we focus on the rooms and details that need extra care.
-                </p>
-              </div>
-              <div class="wide-service-action">
-                <a href="#quote" class="btn btn-outline btn-md select-service-btn" data-select-service="Seasonal Cleaning">
-                  <span>Inquire for Seasonal Quote</span>
-                  <span class="cta-arrow">&rarr;</span>
-                </a>
-              </div>
-            </div>
+          <!-- 05 / A SEASONAL REFRESH -->
+          <article class="service-card service-card-seasonal">
+            <span class="service-number">05 / A SEASONAL REFRESH</span>
+            <h3 class="service-name">Seasonal cleaning</h3>
+            <p class="service-text">
+              Refresh your home for a new season. From spring cleaning to getting ready for the holidays, we’ll focus on the rooms and details that need extra attention.
+            </p>
+            <a href="#quote" class="service-action-link" data-service-select="Seasonal cleaning">
+              <span>Ask for a quote</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </article>
         </div>
       </div>
     </section>
 
     <!-- Our Approach Section -->
-    <section class="section approach-section" id="approach">
-      <div class="container approach-container">
-        <div class="approach-intro">
-          <p class="section-eyebrow text-accent">A PERSONAL APPROACH</p>
-          <h2 class="approach-heading">Your home.<br>Our careful attention.</h2>
-          <p class="approach-large-copy">
-            MD-Shine brings more than six years of cleaning experience and a simple goal: give you one less thing to worry about.
-          </p>
-          <p class="approach-body">
-            We take the time to understand your priorities, agree on the work, and focus on the details that matter to you.
-          </p>
+    <section class="section about-section" id="approach">
+      <div class="container about-container">
+        <div class="about-header">
+          <p class="section-eyebrow text-green">A PERSONAL APPROACH</p>
+          <h2 class="about-title">Your home.<br>Our careful attention.</h2>
         </div>
 
-        <div class="approach-steps-wrapper">
-          <h3 class="steps-subheading">A Simple 3-Step Process</h3>
-          <div class="steps-grid">
-            <div class="step-card">
-              <div class="step-number">01</div>
-              <div class="step-details">
-                <h4>Tell us about your home</h4>
-                <p>Share your location, home size, preferred cleaning service, and ideal date through our inquiry builder or quick call/text.</p>
-              </div>
-            </div>
+        <div class="about-content">
+          <p class="about-large-copy">
+            MD-Shine brings more than six years of cleaning experience and a simple goal: give you one less thing to worry about.
+          </p>
+          <p class="about-secondary-copy">
+            We take the time to understand your priorities, agree on the work, and focus on the details that matter to you.
+          </p>
 
-            <div class="step-card">
-              <div class="step-number">02</div>
-              <div class="step-details">
-                <h4>Agree on your cleaning &amp; quote</h4>
-                <p>We review your home's unique requirements, confirm every detail upfront, and agree on your free quote before scheduling.</p>
-              </div>
+          <div class="steps-list">
+            <div class="step-item">
+              <span class="step-num">01</span>
+              <span class="step-label">Tell us about your home</span>
             </div>
-
-            <div class="step-card">
-              <div class="step-number">03</div>
-              <div class="step-details">
-                <h4>Enjoy your freshly cleaned space</h4>
-                <p>Step into a refreshed, immaculate environment. Relax and enjoy your home with zero cleaning stress.</p>
-              </div>
+            <div class="step-item">
+              <span class="step-num">02</span>
+              <span class="step-label">Agree on your cleaning &amp; quote</span>
+            </div>
+            <div class="step-item">
+              <span class="step-num">03</span>
+              <span class="step-label">Enjoy your freshly cleaned space</span>
             </div>
           </div>
         </div>
@@ -393,70 +250,86 @@
     </section>
 
     <!-- Service Area Section -->
-    <section class="section service-area-section" id="area">
+    <section class="section area-section" id="area">
       <div class="container area-container">
         <p class="section-eyebrow">CLOSE TO HOME</p>
-        <h2 class="area-title">Proudly serving Rockville &amp; Potomac.</h2>
-        <p class="area-desc">
+        <h2 class="area-title">Proudly serving<br>Rockville &amp; Potomac.</h2>
+        <p class="area-copy">
           Residential cleaning in Montgomery County, Maryland, and surrounding areas.<br>
-          Contact us today to check availability in your neighborhood.
+          Contact us to check availability in your neighborhood.
         </p>
-
-        <div class="area-tags-grid" aria-label="Key Service Areas">
-          <div class="area-tag"><span class="tag-pin">📍</span> Rockville, MD</div>
-          <div class="area-tag"><span class="tag-pin">📍</span> Potomac, MD</div>
-          <div class="area-tag"><span class="tag-pin">📍</span> North Bethesda</div>
-          <div class="area-tag"><span class="tag-pin">📍</span> Bethesda</div>
-          <div class="area-tag"><span class="tag-pin">📍</span> Gaithersburg</div>
-          <div class="area-tag"><span class="tag-pin">📍</span> Montgomery County</div>
-        </div>
       </div>
     </section>
 
-    <!-- Quote Inquiry Builder & Direct Contact Section -->
-    <section class="section quote-section" id="quote">
-      <div class="container">
-        <div class="quote-header text-center">
+    <!-- Contact & Quote Form Section -->
+    <section class="section contact-section" id="quote">
+      <div class="container contact-container">
+        <!-- Left: Context & Direct Contact Details -->
+        <div class="contact-info-col">
           <p class="section-eyebrow">LET’S TAKE CLEANING OFF YOUR LIST</p>
-          <h2 class="section-title">Ready for a little more shine?</h2>
-          <p class="section-lead">
-            Select your home details below to generate a pre-filled quote inquiry, or reach out directly by phone or text.
+          <h2 class="contact-title">Ready for a<br>little more shine?</h2>
+          <p class="contact-desc">
+            Call or text for a free quote. Share your location, home size, preferred cleaning service, and ideal date.
           </p>
-          <div class="offer-pill-badge">
-            <span class="sparkle">✦</span>
-            <span>Special Offer: <strong>30% off your first cleaning</strong></span>
+          <div class="discount-callout">
+            <span>30% off your first cleaning</span>
+          </div>
+
+          <div class="direct-channels-block">
+            <p class="channels-kicker">LET’S TALK ABOUT YOUR HOME</p>
+            <a class="phone-link" href="tel:+12403085977">(240) 308-5977</a>
+            
+            <div class="contact-action-buttons">
+              <a class="btn btn-primary" href="sms:+12403085977">Text us for a quote <span aria-hidden="true">&rarr;</span></a>
+              <a class="btn btn-outline" href="tel:+12403085977">Call (240) 308-5977</a>
+            </div>
+
+            <a class="email-link" href="mailto:mdshineclean@gmail.com">mdshineclean@gmail.com</a>
+
+            <div class="pricing-statement">
+              <small>Pricing depends on your home and cleaning needs.<br>We’ll confirm the details before scheduling.</small>
+            </div>
           </div>
         </div>
 
-        <div class="quote-split-grid">
-          <!-- Interactive Quote Inquiry Builder (No calculated price) -->
-          <div class="inquiry-card">
-            <div class="inquiry-header">
-              <div class="inquiry-title-wrap">
-                <span class="inquiry-kicker">Interactive Tool</span>
-                <h3 class="inquiry-heading">Quote Inquiry Builder</h3>
-              </div>
-              <span class="step-indicator">Step 1 of 2</span>
-            </div>
+        <!-- Right: Simple, Pragmatic Quote Request Form -->
+        <div class="quote-form-col">
+          <div class="form-wrapper">
+            <h3 class="form-heading">Request a Free Quote</h3>
+            <p class="form-sub">Share your details and we’ll get back to you with quote options.</p>
 
-            <form id="inquiry-form" class="inquiry-form" onsubmit="return false;">
-              <!-- Field 1: Service Type -->
+            <form id="quote-request-form" class="quote-form">
               <div class="form-group">
-                <label class="form-label" for="inquiry-service">1. Select Cleaning Service</label>
-                <select id="inquiry-service" class="form-select" required>
-                  <option value="Standard Cleaning">Standard Cleaning (Everyday Refresh)</option>
-                  <option value="Deep Cleaning">Deep Cleaning (Thorough Reset)</option>
-                  <option value="Move-in / Move-out">Move-in / Move-out</option>
-                  <option value="Recurring Cleaning">Recurring Cleaning (Weekly / Biweekly / Monthly)</option>
-                  <option value="Seasonal Cleaning">Seasonal Cleaning (Spring / Holiday)</option>
-                </select>
+                <label for="client-name" class="form-label">Your Name</label>
+                <input type="text" id="client-name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
               </div>
 
-              <!-- Field 2: Home Size -->
+              <div class="form-group">
+                <label for="client-phone" class="form-label">Phone or Text Number</label>
+                <input type="tel" id="client-phone" class="form-input" placeholder="(240) 000-0000" required>
+              </div>
+
               <div class="form-row-2">
                 <div class="form-group">
-                  <label class="form-label" for="inquiry-bedrooms">2. Bedrooms</label>
-                  <select id="inquiry-bedrooms" class="form-select">
+                  <label for="client-area" class="form-label">ZIP / Neighborhood</label>
+                  <input type="text" id="client-area" class="form-input" placeholder="e.g. Rockville 20850">
+                </div>
+                <div class="form-group">
+                  <label for="cleaning-service" class="form-label">Cleaning Service</label>
+                  <select id="cleaning-service" class="form-select">
+                    <option value="Standard cleaning">Standard cleaning</option>
+                    <option value="Deep cleaning">Deep cleaning</option>
+                    <option value="Move-in / move-out">Move-in / move-out</option>
+                    <option value="Recurring cleaning">Recurring cleaning</option>
+                    <option value="Seasonal cleaning">Seasonal cleaning</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="home-bedrooms" class="form-label">Bedrooms</label>
+                  <select id="home-bedrooms" class="form-select">
                     <option value="1 Bedroom">1 Bedroom</option>
                     <option value="2 Bedrooms">2 Bedrooms</option>
                     <option value="3 Bedrooms" selected>3 Bedrooms</option>
@@ -465,8 +338,8 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="inquiry-bathrooms">3. Bathrooms</label>
-                  <select id="inquiry-bathrooms" class="form-select">
+                  <label for="home-bathrooms" class="form-label">Bathrooms</label>
+                  <select id="home-bathrooms" class="form-select">
                     <option value="1 Bathroom">1 Bathroom</option>
                     <option value="2 Bathrooms" selected>2 Bathrooms</option>
                     <option value="2.5 Bathrooms">2.5 Bathrooms</option>
@@ -476,167 +349,44 @@
                 </div>
               </div>
 
-              <!-- Field 3: Location & Timing -->
-              <div class="form-row-2">
-                <div class="form-group">
-                  <label class="form-label" for="inquiry-location">4. Neighborhood / Area</label>
-                  <select id="inquiry-location" class="form-select">
-                    <option value="Rockville">Rockville, MD</option>
-                    <option value="Potomac">Potomac, MD</option>
-                    <option value="Bethesda / North Bethesda">Bethesda / North Bethesda</option>
-                    <option value="Gaithersburg">Gaithersburg, MD</option>
-                    <option value="Other Montgomery County">Other Montgomery County Area</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="inquiry-date">5. Preferred Schedule</label>
-                  <select id="inquiry-date" class="form-select">
-                    <option value="As soon as possible">As soon as possible</option>
-                    <option value="This coming week">This coming week</option>
-                    <option value="Next week">Next week</option>
-                    <option value="Flexible / Just checking availability">Flexible / Checking availability</option>
-                  </select>
-                </div>
-              </div>
-
-              <!-- Field 4: Optional Notes -->
               <div class="form-group">
-                <label class="form-label" for="inquiry-notes">6. Any Special Requests or Details (Optional)</label>
-                <input type="text" id="inquiry-notes" class="form-input" placeholder="e.g. Pets in home, priority focus areas, square footage...">
+                <label for="preferred-date" class="form-label">Preferred Date / Timing</label>
+                <input type="text" id="preferred-date" class="form-input" placeholder="e.g. Next Tuesday, or flexible">
               </div>
 
-              <!-- Factual Invariant Notice (No calculated price) -->
-              <div class="pricing-policy-notice">
-                <svg class="notice-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-                <span>Pricing depends on your home and cleaning needs. We’ll confirm all details before scheduling.</span>
+              <div class="form-group">
+                <label for="client-notes" class="form-label">Message / Details (Optional)</label>
+                <textarea id="client-notes" class="form-textarea" rows="3" placeholder="Tell us anything helpful about your space or priorities..."></textarea>
               </div>
 
-              <!-- Live Inquiry Summary Preview -->
-              <div class="inquiry-preview-box">
-                <p class="preview-label">Generated Message Preview:</p>
-                <p id="inquiry-summary-text" class="preview-text">
-                  "Hi MD-Shine, I'd like to request a free quote for Standard Cleaning (3 Beds, 2 Baths) in Rockville. Preferred timing: As soon as possible. (30% first-clean promo)"
-                </p>
-              </div>
+              <button type="submit" class="btn btn-primary btn-block btn-lg">
+                <span>Request Free Quote</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
 
-              <!-- Action CTAs -->
-              <div class="inquiry-actions-group">
-                <a id="btn-send-sms" href="sms:+12403085977" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                  <span>Text Details for Free Quote</span>
-                </a>
-                <a id="btn-send-email" href="mailto:mdshineclean@gmail.com" class="btn btn-outline btn-block">
-                  <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                  <span>Email Details for Free Quote</span>
-                </a>
-                <button type="button" id="btn-copy-inquiry" class="btn-text-copy">
-                  <span id="copy-status-text">📋 Copy Inquiry Details to Clipboard</span>
-                </button>
-              </div>
+              <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
             </form>
-          </div>
-
-          <!-- Direct Contact & Phone Card -->
-          <div class="direct-contact-card">
-            <div class="direct-contact-content">
-              <span class="direct-kicker">DIRECT CONTACT</span>
-              <h3 class="direct-heading">Prefer to speak directly?</h3>
-              <p class="direct-sub">
-                Call or text MD-Shine for your free quote. Share your location, home size, preferred cleaning service, and ideal date.
-              </p>
-
-              <div class="phone-callout-box">
-                <span class="phone-label">Direct Phone &amp; Text Line</span>
-                <a href="tel:+12403085977" class="phone-number-link">(240) 308-5977</a>
-              </div>
-
-              <div class="direct-buttons-stack">
-                <a href="tel:+12403085977" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                  </svg>
-                  <span>Give Us a Call</span>
-                </a>
-                <a href="sms:+12403085977" class="btn btn-secondary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                  <span>Text Us for a Quote</span>
-                </a>
-              </div>
-
-              <div class="direct-email-row">
-                <span class="email-label">Official Email:</span>
-                <a href="mailto:mdshineclean@gmail.com" class="direct-email-link">mdshineclean@gmail.com</a>
-              </div>
-
-              <div class="direct-guarantee-note">
-                <p><strong>30% off your first cleaning</strong></p>
-                <small>Pricing depends on your home and cleaning needs.<br>We’ll confirm all details before scheduling.</small>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Sticky Mobile Quick Action Bar -->
-  <aside class="sticky-mobile-bar" aria-label="Quick Actions">
-    <div class="mobile-bar-actions">
-      <a href="tel:+12403085977" class="mobile-action-btn">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-        </svg>
-        <span>Call</span>
-      </a>
-      <a href="sms:+12403085977" class="mobile-action-btn">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-        </svg>
-        <span>Text</span>
-      </a>
-      <a href="#quote" class="mobile-action-btn mobile-action-primary">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-        </svg>
-        <span>Quote Inquiry</span>
-      </a>
-    </div>
-  </aside>
-
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="#" class="brand brand-light" aria-label="MD-Shine Cleaning Service LLC">
-            <span class="brand-title">MD<span class="brand-dot">·</span>SHINE<span class="brand-spark">✦</span></span>
-            <span class="brand-sub">CLEANING SERVICE LLC</span>
-          </a>
-          <p class="footer-tagline">We Clean. You Relax.</p>
+      <div class="footer-brand-row">
+        <div class="brand brand-light">
+          <span class="brand-title">MD<span class="brand-dot">·</span>SHINE<span class="brand-spark">✦</span></span>
+          <span class="brand-sub">CLEANING SERVICE LLC</span>
         </div>
-        <div class="footer-contact-summary">
-          <p><strong>MD-Shine Cleaning Service LLC</strong></p>
-          <p>Rockville, Potomac &amp; Montgomery County, MD</p>
-          <p>Phone: <a href="tel:+12403085977">(240) 308-5977</a></p>
-          <p>Email: <a href="mailto:mdshineclean@gmail.com">mdshineclean@gmail.com</a></p>
-        </div>
+        <p class="footer-tagline">We Clean. You Relax.</p>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footer-legal-row">
         <p class="copyright">&copy; 2026 MD-Shine Cleaning Service LLC. All rights reserved.</p>
-        <p class="footer-demo-disclaimer">
-          PREVIEW CONCEPT WEBSITE • Prepared by Ruya Web Agency for demonstration purposes. Not the official website of MD-Shine Cleaning Service LLC.
+        <p class="footer-disclosure">
+          Concept website created by Ruya Web Studio for demonstration purposes • Not the official website of MD-Shine Cleaning Service LLC.
         </p>
       </div>
     </div>
