@@ -14,6 +14,7 @@ Ruya-Demos/
 ├── artisan-coffee-house/
 ├── dream2kreate/
 ├── heritage-woodworks/
+├── md-shine/
 ├── md-shine-cleaning-service/
 ├── smilecraft-dental-care/
 └── README.md
