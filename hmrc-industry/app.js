@@ -1,4 +1,4 @@
-// HMRC Industry Pvt Ltd — Minimal Restrained Interaction
+// HMRC Industry Pvt Ltd — Interactions
 
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Nav Toggle
@@ -21,26 +21,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Editorial Services List Accordion
-  const serviceEntries = document.querySelectorAll('.service-entry');
-  serviceEntries.forEach(entry => {
-    entry.addEventListener('click', () => {
-      const isActive = entry.classList.contains('active');
-      
-      // Close all others
-      serviceEntries.forEach(e => e.classList.remove('active'));
-
-      // If clicked entry wasn't active, activate it
-      if (!isActive) {
-        entry.classList.add('active');
+  // Smooth Scroll offset adjustment
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href === '#' || href === '#top') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
       }
-    });
-
-    // Keyboard accessibility
-    entry.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
+      const target = document.querySelector(href);
+      if (target) {
         e.preventDefault();
-        entry.click();
+        const headerOffset = 84;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
       }
     });
   });
@@ -52,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Message Received (Demo)';
+      submitBtn.textContent = 'Inquiry Received (Demo)';
       submitBtn.disabled = true;
       submitBtn.style.opacity = '0.7';
 
@@ -61,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
         submitBtn.style.opacity = '1';
-      }, 3000);
+      }, 3500);
     });
   }
 });
