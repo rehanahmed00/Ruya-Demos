@@ -1,4 +1,4 @@
-// HMRC Industry Pvt Ltd — Interactions
+// HMRC Industry Pvt Ltd — High-End Interactions
 
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Nav Toggle
@@ -20,41 +20,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Interactive Services List & Dynamic Image Preview
-  const serviceRows = document.querySelectorAll('.service-item-row');
-  const previewImg = document.getElementById('servicePreviewImg');
-  const previewLabel = document.getElementById('servicePreviewLabel');
+  // Numbered Services: Interactive List + Adjacent Large Image Switcher
+  const serviceRows = document.querySelectorAll('.service-row-item');
+  const heroImg = document.getElementById('serviceHeroImg');
+  const heroTitle = document.getElementById('serviceHeroTitle');
 
-  function activateService(row) {
+  function switchServiceVisual(row) {
     serviceRows.forEach(r => r.classList.remove('active'));
     row.classList.add('active');
 
     const imgSrc = row.getAttribute('data-img');
-    const label = row.getAttribute('data-label');
+    const title = row.getAttribute('data-title');
 
-    if (previewImg && imgSrc) {
-      previewImg.style.opacity = '0.4';
+    if (heroImg && imgSrc && heroImg.src !== imgSrc) {
+      heroImg.style.opacity = '0.3';
+      heroImg.style.transform = 'scale(0.98)';
       setTimeout(() => {
-        previewImg.src = imgSrc;
-        previewImg.style.opacity = '1';
-      }, 150);
+        heroImg.src = imgSrc;
+        heroImg.style.opacity = '1';
+        heroImg.style.transform = 'scale(1)';
+      }, 180);
     }
 
-    if (previewLabel && label) {
-      previewLabel.textContent = label;
+    if (heroTitle && title) {
+      heroTitle.textContent = title;
     }
   }
 
   serviceRows.forEach(row => {
-    // Click behavior
+    // Click interaction (expands row & switches image)
     row.addEventListener('click', () => {
-      activateService(row);
+      switchServiceVisual(row);
     });
 
-    // Hover behavior on desktop
+    // Hover interaction on desktop
     row.addEventListener('mouseenter', () => {
       if (window.innerWidth > 1024) {
-        activateService(row);
+        switchServiceVisual(row);
       }
     });
 
@@ -62,12 +64,12 @@ document.addEventListener('DOMContentLoaded', () => {
     row.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        activateService(row);
+        switchServiceVisual(row);
       }
     });
   });
 
-  // Smooth Scroll offset adjustment for 84px header
+  // Smooth Scroll offset adjustment for 86px header
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
@@ -78,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
-        const headerOffset = 84;
+        const headerOffset = 86;
         const elementPosition = target.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
