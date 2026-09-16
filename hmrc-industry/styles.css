@@ -1,43 +1,47 @@
 /* ==========================================================================
-   HMRC INDUSTRY PVT LTD — RUYA SYSTEM IMPLEMENTATION
-   Design Reference: Ruya Electric Architecture
-   Palette: Clean Light Background, Deep Slate Hero/Sections, Warm Amber Accent
-   Typography: Outfit (Headings) + Plus Jakarta Sans / Inter (Body)
+   HMRC INDUSTRY PVT LTD — REFINED CONSULTANCY SYSTEM
+   Palette: Warm Porcelain (#F9F8F5), Deep Obsidian Charcoal (#141312), Warm Cognac Bronze (#9E7547)
+   Eliminates all AI-style generic navy blue and bright orange.
+   Typography: Outfit (Headings) + Plus Jakarta Sans (Body)
    ========================================================================== */
 
 :root {
-  /* Colors */
-  --bg-body: #F8FAFC;
+  /* Canvas & Light Surfaces */
+  --bg-body: #F9F8F5;
   --bg-card: #FFFFFF;
-  --bg-dark: #131722;
-  --bg-dark-surface: #1B2130;
-  --bg-dark-card: #202738;
+  --bg-surface: #F2EFE9;
+
+  /* Deep Charcoal / Obsidian (Zero Blue Tint) */
+  --bg-dark: #141312;
+  --bg-dark-surface: #1C1B19;
+  --bg-dark-card: #23221F;
 
   /* Text Colors */
-  --text-primary: #0F172A;
-  --text-secondary: #475569;
-  --text-muted: #64748B;
-  --text-light: #F8FAFC;
-  --text-light-muted: #94A3B8;
+  --text-primary: #181716;
+  --text-secondary: #57524C;
+  --text-muted: #78726A;
+  --text-light: #FAF8F5;
+  --text-light-muted: #A39D93;
 
-  /* Accent: Warm Amber / Odoo Golden Orange */
-  --accent: #F59E0B;
-  --accent-hover: #D97706;
-  --accent-light: rgba(245, 158, 11, 0.12);
-  --accent-glow: rgba(245, 158, 11, 0.25);
+  /* Sophisticated Accent: Warm Cognac / Bronze / Muted Brass */
+  --accent: #9E7547;
+  --accent-hover: #876237;
+  --accent-light: rgba(158, 117, 71, 0.12);
+  --accent-glow: rgba(158, 117, 71, 0.22);
+  --accent-gold: #C29B68;
 
   /* Borders & Shadows */
-  --border-light: #E2E8F0;
-  --border-dark: rgba(255, 255, 255, 0.1);
-  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
-  --shadow-lg: 0 20px 30px -10px rgba(15, 23, 42, 0.1);
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  --border-light: #E5E1D8;
+  --border-dark: rgba(255, 255, 255, 0.12);
+  --shadow-sm: 0 2px 4px rgba(24, 23, 22, 0.04);
+  --shadow-md: 0 10px 25px -5px rgba(24, 23, 22, 0.06), 0 8px 10px -6px rgba(24, 23, 22, 0.04);
+  --shadow-lg: 0 20px 30px -10px rgba(24, 23, 22, 0.1);
+  --radius-md: 10px;
+  --radius-lg: 14px;
 
   /* Typography */
-  --font-heading: 'Outfit', sans-serif;
-  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Layout */
   --max-w: 1220px;
@@ -78,9 +82,9 @@ body {
 
 /* 01. Demo Banner */
 .demo-banner {
-  background: linear-gradient(90deg, #131722 0%, #1E293B 100%);
-  border-bottom: 1px solid rgba(245, 158, 11, 0.3);
-  color: #F8FAFC;
+  background: linear-gradient(90deg, #141312 0%, #201E1C 100%);
+  border-bottom: 1px solid rgba(158, 117, 71, 0.3);
+  color: #FAF8F5;
   text-align: center;
   padding: 9px 16px;
   font-size: 0.8rem;
@@ -93,7 +97,7 @@ body {
 
 .demo-banner-badge {
   background-color: var(--accent);
-  color: #131722;
+  color: #FFFFFF;
   font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -107,7 +111,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(19, 23, 34, 0.92);
+  background: rgba(20, 19, 18, 0.94);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-dark);
   padding: 16px 0;
@@ -150,7 +154,7 @@ body {
 .brand-sub {
   font-size: 0.62rem;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--accent-gold);
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -204,7 +208,7 @@ body {
   justify-content: center;
   gap: 8px;
   padding: 11px 22px;
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
@@ -215,7 +219,7 @@ body {
 
 .btn-primary {
   background-color: var(--accent);
-  color: #131722;
+  color: #FFFFFF;
   border: 1px solid var(--accent);
 }
 
@@ -237,24 +241,13 @@ body {
   transform: translateY(-2px);
 }
 
-.btn-outline-dark {
-  background-color: transparent;
-  color: var(--text-primary);
-  border: 1px solid var(--border-light);
-}
-
-.btn-outline-dark:hover {
-  border-color: var(--text-primary);
-  background-color: rgba(15, 23, 42, 0.03);
-}
-
 .badge-pill {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   background-color: var(--accent-light);
-  color: #D97706;
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: var(--accent);
+  border: 1px solid rgba(158, 117, 71, 0.3);
   padding: 6px 14px;
   border-radius: 50px;
   font-size: 0.76rem;
@@ -265,13 +258,13 @@ body {
 }
 
 .badge-pill-dark {
-  background-color: rgba(245, 158, 11, 0.15);
-  color: var(--accent);
-  border-color: rgba(245, 158, 11, 0.35);
+  background-color: rgba(158, 117, 71, 0.16);
+  color: var(--accent-gold);
+  border-color: rgba(158, 117, 71, 0.35);
 }
 
 .section-tag {
-  color: var(--accent-hover);
+  color: var(--accent);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -317,7 +310,7 @@ body {
 /* 03. HERO SECTION (Photographic Deep Dark Background) */
 .hero-section {
   position: relative;
-  background: linear-gradient(rgba(19, 23, 34, 0.88), rgba(19, 23, 34, 0.94)), url('assets/images/banner/banner-image.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(20, 19, 18, 0.90), rgba(20, 19, 18, 0.95)), url('assets/images/banner/banner-image.jpg') center/cover no-repeat;
   padding: clamp(4.5rem, 8vw, 7.5rem) 0 clamp(4rem, 7vw, 6.5rem) 0;
   color: #FFFFFF;
   border-bottom: 1px solid var(--border-dark);
@@ -361,7 +354,7 @@ body {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-dark);
   padding: 12px 20px;
-  border-radius: 12px;
+  border-radius: 10px;
   backdrop-filter: blur(8px);
 }
 
@@ -369,7 +362,7 @@ body {
   display: block;
   font-family: var(--font-heading);
   font-size: 1.35rem;
-  color: var(--accent);
+  color: var(--accent-gold);
   line-height: 1;
 }
 
@@ -386,7 +379,7 @@ body {
   background-color: var(--border-dark);
 }
 
-/* Hero Right: Trust / Practice Card */
+/* Hero Right Preview Card */
 .hero-card-preview {
   background: var(--bg-dark-card);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -415,15 +408,15 @@ body {
   border-radius: 50%;
 }
 
-.dot-red { background-color: #EF4444; }
-.dot-yellow { background-color: #F59E0B; }
-.dot-green { background-color: #10B981; }
+.dot-red { background-color: #8C6A48; }
+.dot-yellow { background-color: #A68057; }
+.dot-green { background-color: #C29B68; }
 
 .preview-tag {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: var(--accent);
+  color: var(--accent-gold);
   text-transform: uppercase;
 }
 
@@ -460,11 +453,11 @@ body {
   align-items: center;
   gap: 10px;
   font-size: 0.88rem;
-  color: #F8FAFC;
+  color: #FAF8F5;
 }
 
 .check-icon {
-  color: var(--accent);
+  color: var(--accent-gold);
   font-weight: bold;
 }
 
@@ -493,7 +486,7 @@ body {
 .service-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
-  border-color: rgba(245, 158, 11, 0.4);
+  border-color: rgba(158, 117, 71, 0.4);
 }
 
 .service-top-bar {
@@ -506,9 +499,9 @@ body {
 .service-icon-box {
   width: 48px;
   height: 48px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: var(--accent-light);
-  color: var(--accent-hover);
+  color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -573,10 +566,10 @@ body {
   position: absolute;
   bottom: 12px;
   left: 12px;
-  background: rgba(19, 23, 34, 0.85);
+  background: rgba(20, 19, 18, 0.88);
   color: #FFFFFF;
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 0.74rem;
   font-weight: 600;
   backdrop-filter: blur(6px);
@@ -684,7 +677,7 @@ body {
   color: var(--text-muted);
 }
 
-/* 07. WHY CHOOSE US (Ruya Card Grid) */
+/* 07. WHY CHOOSE US */
 .why-section {
   background-color: #FFFFFF;
   border-top: 1px solid var(--border-light);
@@ -707,7 +700,7 @@ body {
 
 .why-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(245, 158, 11, 0.4);
+  border-color: rgba(158, 117, 71, 0.4);
   box-shadow: var(--shadow-sm);
 }
 
@@ -715,7 +708,7 @@ body {
   font-family: var(--font-heading);
   font-size: 0.85rem;
   font-weight: 800;
-  color: var(--accent-hover);
+  color: var(--accent);
   margin-bottom: 14px;
   display: inline-block;
 }
@@ -735,7 +728,7 @@ body {
   line-height: 1.65;
 }
 
-/* 08. ODOO FEATURE SECTION (Dark Background Section) */
+/* 08. ODOO FEATURE SECTION */
 .odoo-section {
   background-color: var(--bg-dark);
   color: #FFFFFF;
@@ -756,7 +749,7 @@ body {
 .odoo-badge-white {
   background-color: #FFFFFF;
   padding: 10px 22px;
-  border-radius: 8px;
+  border-radius: 6px;
   display: inline-block;
 }
 
@@ -798,7 +791,7 @@ body {
 }
 
 .pillar-bullet {
-  color: var(--accent);
+  color: var(--accent-gold);
 }
 
 .pillar-desc {
@@ -807,7 +800,7 @@ body {
   line-height: 1.6;
 }
 
-/* 09. PROCESS SECTION (3-Step Numbered Flow) */
+/* 09. PROCESS SECTION */
 .process-section {
   background-color: var(--bg-body);
 }
@@ -836,13 +829,13 @@ body {
 
 .process-step-badge {
   background-color: var(--accent-light);
-  color: var(--accent-hover);
+  color: var(--accent);
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 800;
   width: 44px;
   height: 44px;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -886,7 +879,7 @@ body {
 }
 
 .quote-stars {
-  color: var(--accent);
+  color: var(--accent-gold);
   margin-bottom: 16px;
   font-size: 0.9rem;
   letter-spacing: 2px;
@@ -932,7 +925,7 @@ body {
 }
 
 .faq-item.active {
-  border-color: rgba(245, 158, 11, 0.4);
+  border-color: rgba(158, 117, 71, 0.4);
 }
 
 .faq-question {
@@ -950,7 +943,7 @@ body {
 
 .faq-toggle-icon {
   font-size: 1.25rem;
-  color: var(--accent-hover);
+  color: var(--accent);
   transition: transform 0.25s ease;
 }
 
@@ -976,7 +969,7 @@ body {
   line-height: 1.7;
 }
 
-/* 12. CONTACT SECTION (Ruya 2-Column Contact Card) */
+/* 12. CONTACT SECTION */
 .contact-section {
   background-color: #FFFFFF;
   border-top: 1px solid var(--border-light);
@@ -1023,9 +1016,9 @@ body {
 .meta-icon-sq {
   width: 42px;
   height: 42px;
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: var(--accent-light);
-  color: var(--accent-hover);
+  color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1049,7 +1042,7 @@ body {
 }
 
 .meta-phone-link {
-  color: var(--accent-hover);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -1086,7 +1079,7 @@ body {
 .form-ctrl {
   background: var(--bg-body);
   border: 1px solid var(--border-light);
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 12px 14px;
   font-family: var(--font-body);
   font-size: 0.9rem;
@@ -1111,7 +1104,7 @@ body {
   margin-top: 8px;
 }
 
-/* 13. COMPACT FOOTER */
+/* 13. FOOTER */
 .site-footer {
   background-color: var(--bg-dark);
   color: var(--text-light);
@@ -1161,7 +1154,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-gold);
   margin-bottom: 18px;
 }
 
