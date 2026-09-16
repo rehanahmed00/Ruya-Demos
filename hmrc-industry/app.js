@@ -1,86 +1,53 @@
-// HMRC Industry Pvt Ltd — High-End Interactions
+// HMRC Industry Pvt Ltd — Ruya System Interactions
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Nav Toggle
+  // Mobile Navigation Toggle
   const mobileToggle = document.getElementById('mobileToggle');
-  const navLinks = document.getElementById('navLinks');
+  const navMenu = document.getElementById('navMenu');
 
-  if (mobileToggle && navLinks) {
+  if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', () => {
       const isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
       mobileToggle.setAttribute('aria-expanded', !isExpanded);
-      navLinks.classList.toggle('active');
+      navMenu.classList.toggle('active');
     });
 
-    navLinks.querySelectorAll('a').forEach(link => {
+    navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
+        navMenu.classList.remove('active');
         mobileToggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
 
-  // Numbered Services: Interactive List + Adjacent Large Image Switcher
-  const serviceRows = document.querySelectorAll('.service-row-item');
-  const heroImg = document.getElementById('serviceHeroImg');
-  const heroTitle = document.getElementById('serviceHeroTitle');
-
-  function switchServiceVisual(row) {
-    serviceRows.forEach(r => r.classList.remove('active'));
-    row.classList.add('active');
-
-    const imgSrc = row.getAttribute('data-img');
-    const title = row.getAttribute('data-title');
-
-    if (heroImg && imgSrc && heroImg.src !== imgSrc) {
-      heroImg.style.opacity = '0.3';
-      heroImg.style.transform = 'scale(0.98)';
-      setTimeout(() => {
-        heroImg.src = imgSrc;
-        heroImg.style.opacity = '1';
-        heroImg.style.transform = 'scale(1)';
-      }, 180);
+  // FAQ Accordion Toggle
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    if (question) {
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        // Close others
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
     }
-
-    if (heroTitle && title) {
-      heroTitle.textContent = title;
-    }
-  }
-
-  serviceRows.forEach(row => {
-    // Click interaction (expands row & switches image)
-    row.addEventListener('click', () => {
-      switchServiceVisual(row);
-    });
-
-    // Hover interaction on desktop
-    row.addEventListener('mouseenter', () => {
-      if (window.innerWidth > 1024) {
-        switchServiceVisual(row);
-      }
-    });
-
-    // Keyboard accessibility
-    row.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        switchServiceVisual(row);
-      }
-    });
   });
 
-  // Smooth Scroll offset adjustment for 86px header
+  // Smooth Scroll offset adjustment
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
-      if (href === '#' || href === '#top') {
+      if (href === '#' || href === '#hero') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         return;
       }
       const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
-        const headerOffset = 86;
+        const headerOffset = 80;
         const elementPosition = target.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -99,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Message Received (Demo)';
+      submitBtn.textContent = 'Message Sent (Demo)';
       submitBtn.disabled = true;
       submitBtn.style.opacity = '0.75';
 

@@ -6,47 +6,45 @@
   <title>HMRC Industry Pvt Ltd — Certified Odoo Partner &amp; Enterprise Solutions</title>
   <meta name="description" content="A certified Odoo partner providing intelligent business solutions, ERP implementation, mobile app development, cyber security, and 24/7 support.">
   
-  <!-- High-End Editorial Typography: Playfair Display + Plus Jakarta Sans -->
+  <!-- Typography: Outfit (Modern Bold Headings) & Plus Jakarta Sans (Clean Modern Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Top Disclaimer Notice -->
+  <!-- 01. Demo Banner -->
   <aside class="demo-banner" role="note">
-    <div class="site-frame demo-banner-flex">
-      <span class="demo-pill">Design Concept</span>
-      <span>Website redesign concept — prepared using publicly available company information.</span>
-    </div>
+    <span class="demo-banner-badge">Interactive Demo</span>
+    <span>Website redesign concept — prepared using publicly available company information.</span>
   </aside>
 
-  <!-- 01. Navigation -->
-  <header class="header-nav" id="top">
-    <div class="site-frame nav-row">
-      <a href="#top" class="brand-mark" aria-label="HMRC Industry Pvt Ltd">
+  <!-- 02. Navbar -->
+  <header class="navbar" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo-link" aria-label="HMRC Industry Pvt Ltd">
         <img src="assets/images/logo/HMRC.png" alt="HMRC Logo" class="brand-logo-img">
-        <div class="brand-sep"></div>
-        <div class="brand-titles">
-          <span class="brand-name-text">HMRC</span>
-          <span class="brand-sub-text">INDUSTRY PVT LTD</span>
+        <div class="brand-title-wrap">
+          <span class="brand-main">HMRC</span>
+          <span class="brand-sub">INDUSTRY PVT LTD</span>
         </div>
       </a>
 
-      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
         <a href="#services" class="nav-link">Services</a>
         <a href="#odoo" class="nav-link">Odoo ERP</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#why-us" class="nav-link">Why Us</a>
         <a href="#process" class="nav-link">Process</a>
+        <a href="#faq" class="nav-link">FAQ</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
-      <div class="nav-cta-wrap">
-        <a href="#contact" class="btn-nav">Talk to Us</a>
-        <button class="mobile-menu-btn" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">Talk to Us</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">
           <span></span>
           <span></span>
         </button>
@@ -55,108 +53,232 @@
   </header>
 
   <main>
-    <!-- 02. HERO SECTION -->
-    <section class="section hero-section">
-      <div class="site-frame">
-        <div class="hero-grid">
-          <div class="hero-text-col">
-            <span class="eyebrow">CERTIFIED ODOO PARTNER</span>
-            <h1 class="hero-headline">
-              Intelligent Business Solutions, Built Around the Way You Work.
-            </h1>
-            <p class="hero-subcopy">
+    <!-- 03. HERO SECTION (Photographic Deep Dark Background) -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-layout">
+          <div class="hero-content">
+            <div class="badge-pill badge-pill-dark">
+              <span>✦</span> CERTIFIED ODOO PARTNER
+            </div>
+            <h1>Transform Your Business with Intelligent Solutions</h1>
+            <p class="hero-desc">
               A certified Odoo partner providing intelligent business solutions, ERP implementation, mobile app development, cyber security, and 24/7 support.
             </p>
-            <div class="hero-actions">
+            
+            <div class="hero-buttons">
               <a href="#services" class="btn btn-primary">Explore Services</a>
-              <a href="#contact" class="btn-text-link">Talk to HMRC &rarr;</a>
+              <a href="#contact" class="btn btn-secondary">Talk to HMRC</a>
             </div>
 
-            <div class="hero-trust-lockup">
-              <span class="lockup-label">OFFICIAL PRACTICE</span>
-              <img src="assets/images/logo/odoo_ready_partners_rgb.png" alt="Odoo Ready Partner Official Badge" class="lockup-badge-img">
+            <!-- Stats Bar -->
+            <div class="hero-stats-pill">
+              <div class="hero-stat-node">
+                <strong>32+</strong>
+                <span>Satisfied Clients</span>
+              </div>
+              <div class="hero-stat-sep"></div>
+              <div class="hero-stat-node">
+                <strong>37+</strong>
+                <span>Finished Projects</span>
+              </div>
+              <div class="hero-stat-sep"></div>
+              <div class="hero-stat-node">
+                <strong>25+</strong>
+                <span>Skilled Experts</span>
+              </div>
             </div>
           </div>
 
-          <div class="hero-visual-frame" aria-hidden="true">
-            <div class="hero-img-container">
-              <img src="assets/images/banner/banner-image.jpg" alt="Enterprise Technology">
+          <!-- Hero Right Preview Card -->
+          <div class="hero-card-preview">
+            <div class="card-preview-header">
+              <div class="traffic-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <span class="preview-tag">Official Partner</span>
             </div>
-            <div class="hero-caption-card">
-              <span class="caption-eyebrow">ENTERPRISE PRACTICE</span>
-              <p class="caption-desc">Certified ERP engineering and business automation.</p>
+
+            <div class="hero-odoo-badge-box">
+              <img src="assets/images/logo/odoo_ready_partners_rgb.png" alt="Odoo Ready Partner Badge">
             </div>
+
+            <p class="card-preview-text">
+              Comprehensive ERP engineering customized to fit your unique business workflows from sales and inventory to accounting and CRM.
+            </p>
+
+            <ul class="preview-checklist">
+              <li><span class="check-icon">✓</span> Certified Odoo Consultants &amp; Developers</li>
+              <li><span class="check-icon">✓</span> Seamless API &amp; Mobile Ecosystems</li>
+              <li><span class="check-icon">✓</span> Dedicated 24/7 Technical Support</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 03. STATS STRIP -->
-    <section class="stats-strip">
-      <div class="site-frame">
-        <div class="stats-grid">
-          <div class="stat-unit">
-            <div class="stat-number">32+</div>
-            <div class="stat-label">SATISFIED CLIENTS</div>
-            <p class="stat-info">Across enterprise operations and diverse industry verticals.</p>
-          </div>
+    <!-- 04. SERVICES SECTION (2-Column Responsive Card Grid) -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">WHAT WE DO</div>
+          <h2 class="section-title">Comprehensive Business Solutions</h2>
+          <p class="section-desc">
+            End-to-end expertise across ERP implementation, mobile applications, secure communication APIs, digital marketing, and cybersecurity.
+          </p>
+        </div>
 
-          <div class="stat-unit">
-            <div class="stat-number">37+</div>
-            <div class="stat-label">FINISHED PROJECTS</div>
-            <p class="stat-info">End-to-end ERP implementations and digital systems.</p>
-          </div>
+        <div class="services-grid-2col">
+          <!-- Service 1 -->
+          <article class="service-card">
+            <div class="service-top-bar">
+              <div class="service-icon-box">⚙️</div>
+              <span class="service-num">01</span>
+            </div>
+            <h3 class="service-title">Odoo ERP Implementation</h3>
+            <p class="service-desc">
+              Streamline your business operations with our Odoo ERP Implementation services. We help you integrate, customize, and optimize Odoo to enhance efficiency, automate workflows, and improve decision-making.
+            </p>
+          </article>
 
-          <div class="stat-unit">
-            <div class="stat-number">25+</div>
-            <div class="stat-label">SKILLED EXPERTS</div>
-            <p class="stat-info">Certified Odoo consultants, developers, and security analysts.</p>
+          <!-- Service 2 -->
+          <article class="service-card">
+            <div class="service-top-bar">
+              <div class="service-icon-box">📱</div>
+              <span class="service-num">02</span>
+            </div>
+            <h3 class="service-title">Mobile Application Development</h3>
+            <p class="service-desc">
+              Transform your ideas into reality with our Mobile App Development services. We build user-friendly, high-performance apps for Android and iOS, tailored to your business needs.
+            </p>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card">
+            <div class="service-top-bar">
+              <div class="service-icon-box">💬</div>
+              <span class="service-num">03</span>
+            </div>
+            <h3 class="service-title">WhatsApp API Integration</h3>
+            <p class="service-desc">
+              Enhance customer engagement with WhatsApp API Integration. Automate messages, send notifications, and provide seamless customer support through the world's most popular messaging platform.
+            </p>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="service-card">
+            <div class="service-top-bar">
+              <div class="service-icon-box">🛡️</div>
+              <span class="service-num">04</span>
+            </div>
+            <h3 class="service-title">Cyber Security Services</h3>
+            <p class="service-desc">
+              Protect your business from cyber threats with our Cyber Security Solutions. We offer vulnerability assessments, penetration testing, and robust security implementations to safeguard your digital assets.
+            </p>
+          </article>
+
+          <!-- Service 5 -->
+          <article class="service-card">
+            <div class="service-top-bar">
+              <div class="service-icon-box">📈</div>
+              <span class="service-num">05</span>
+            </div>
+            <h3 class="service-title">Digital Marketing</h3>
+            <p class="service-desc">
+              Boost your online presence with our Digital Marketing Services. From SEO, social media marketing, and PPC to content marketing, we help your brand grow and reach the right audience effectively.
+            </p>
+          </article>
+
+          <!-- Service 6 -->
+          <article class="service-card">
+            <div class="service-top-bar">
+              <div class="service-icon-box">💻</div>
+              <span class="service-num">06</span>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">
+              Build fast, responsive, and scalable websites with our Web Development services. We specialize in custom web design, e-commerce development, and CMS solutions to help your business stand out online.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. VISUAL GALLERY SHOWCASE -->
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">CAPABILITIES</div>
+          <h2 class="section-title">Our Services in Action</h2>
+          <p class="section-desc">
+            Visual representations of our technology practices spanning enterprise ERP, mobile engineering, and secure platforms.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <img src="assets/images/service/service-image1.webp" alt="Odoo ERP Practice" loading="lazy">
+            <div class="gallery-overlay-badge">Odoo ERP Implementation</div>
+          </div>
+          <div class="gallery-card">
+            <img src="assets/images/service/service-image2.webp" alt="Mobile Development" loading="lazy">
+            <div class="gallery-overlay-badge">Mobile Engineering</div>
+          </div>
+          <div class="gallery-card">
+            <img src="assets/images/service/service-image3.webp" alt="WhatsApp API Integration" loading="lazy">
+            <div class="gallery-overlay-badge">WhatsApp API Messaging</div>
+          </div>
+          <div class="gallery-card">
+            <img src="assets/images/service/service-image4.webp" alt="Cyber Security" loading="lazy">
+            <div class="gallery-overlay-badge">Cyber Security Defense</div>
+          </div>
+          <div class="gallery-card">
+            <img src="assets/images/service/service-image5.webp" alt="Digital Marketing" loading="lazy">
+            <div class="gallery-overlay-badge">Digital Growth &amp; SEO</div>
+          </div>
+          <div class="gallery-card">
+            <img src="assets/images/service/service-image6.webp" alt="Web Development" loading="lazy">
+            <div class="gallery-overlay-badge">Enterprise Web Platforms</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 04. ABOUT SECTION (Asymmetric Editorial + Authentic Founder Profile) -->
+    <!-- 06. ABOUT SECTION -->
     <section class="section about-section" id="about">
-      <div class="site-frame">
-        <div class="about-grid">
+      <div class="container">
+        <div class="about-layout">
           <div class="about-visual-lockup">
-            <div class="about-photo-frame">
-              <img src="assets/images/about/about-image1.jpg" alt="HMRC Industry Operations">
-            </div>
-            <div class="founder-editorial-badge">
-              <div class="founder-round-pic">
-                <img src="assets/images/team/0001new.jpg" alt="Himanshu Madaan">
-              </div>
-              <div class="founder-meta-box">
-                <h4 class="founder-name">Himanshu Madaan</h4>
-                <span class="founder-title">Founder &amp; Chairman, HMRC Groups</span>
+            <img src="assets/images/about/about-image1.jpg" alt="HMRC Industry Operations" class="about-main-pic">
+            <div class="founder-card-overlay">
+              <img src="assets/images/team/0001new.jpg" alt="Himanshu Madaan">
+              <div>
+                <h5>Himanshu Madaan</h5>
+                <span>Founder &amp; Chairman, HMRC Groups</span>
               </div>
             </div>
           </div>
 
-          <div class="about-content-col">
-            <span class="eyebrow">ABOUT HMRC INDUSTRY PVT LTD</span>
-            <h2 class="heading-editorial">
-              We Strive to Offer <em>Intelligent</em> Business Solutions.
-            </h2>
-            <p class="about-lead-quote">
+          <div class="about-content-block">
+            <div class="section-tag">ABOUT HMRC INDUSTRY</div>
+            <h2 class="section-title">We Strive to Offer Intelligent Business Solutions</h2>
+            <p class="lead-text">
               At HMRC INDUSTRY PVT LTD, we are a certified Odoo partner committed to delivering comprehensive business solutions that streamline operations and maximize productivity.
             </p>
-            <p class="about-desc-copy">
+            <p class="body-text">
               With years of experience and expertise in Odoo’s powerful ERP system, we help businesses of all sizes transform their processes, from sales to inventory management, accounting, and beyond.
             </p>
 
-            <div class="about-points-row">
-              <div>
-                <div class="point-tag">CUSTOM ARCHITECTURE</div>
-                <h5 class="point-title">Tailored to Workflows</h5>
-                <p class="point-text">Designed to integrate seamlessly with your existing operating model.</p>
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <strong>Certified Expertise</strong>
+                <span>Official Odoo ready partners with specialized developer teams.</span>
               </div>
-              <div>
-                <div class="point-tag">RELIABLE GOVERNANCE</div>
-                <h5 class="point-title">Full Lifecycle Support</h5>
-                <p class="point-text">From discovery and implementation to continuous 24/7 assistance.</p>
+              <div class="highlight-box">
+                <strong>24/7 Availability</strong>
+                <span>Round-the-clock support ensuring smooth business operations.</span>
               </div>
             </div>
           </div>
@@ -164,251 +286,144 @@
       </div>
     </section>
 
-    <!-- 05. SERVICES: WHAT WE DO BEST (Numbered List + Large Changing Image) -->
-    <section class="section services-section" id="services">
-      <div class="site-frame">
-        <div class="services-editorial-layout">
-          <!-- Left: Numbered Services -->
-          <div class="services-left-content">
-            <div class="services-header-box">
-              <span class="eyebrow">OUR SERVICES</span>
-              <h2 class="heading-editorial">Our Services</h2>
-              <p class="services-side-desc">
-                Comprehensive business solutions across ERP, mobile development, secure communication APIs, digital marketing, and web platforms.
-              </p>
-            </div>
+    <!-- 07. WHY CHOOSE US (Ruya Card Grid) -->
+    <section class="section why-section" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">WHY WORK WITH US</div>
+          <h2 class="section-title">Built Around Your Business Needs</h2>
+          <p class="section-desc">
+            Six pillars that establish our commitment to technical precision, deadlines, and client success.
+          </p>
+        </div>
 
-            <div class="services-numbered-list">
-              <!-- 01 -->
-              <article class="service-row-item active" data-img="assets/images/service/service-image1.webp" data-title="Odoo ERP Implementation" tabindex="0">
-                <div class="service-row-header">
-                  <div class="service-meta-group">
-                    <span class="service-index-num">01</span>
-                    <h3 class="service-title-text">Odoo ERP Implementation</h3>
-                  </div>
-                  <span class="service-arrow-glyph" aria-hidden="true">&rarr;</span>
-                </div>
-                <div class="service-row-body">
-                  <p>Streamline your business operations with our Odoo ERP Implementation services. We help you integrate, customize, and optimize Odoo to enhance efficiency, automate workflows, and improve decision-making.</p>
-                </div>
-              </article>
-
-              <!-- 02 -->
-              <article class="service-row-item" data-img="assets/images/service/service-image2.webp" data-title="Mobile Application Development" tabindex="0">
-                <div class="service-row-header">
-                  <div class="service-meta-group">
-                    <span class="service-index-num">02</span>
-                    <h3 class="service-title-text">Mobile Application Development</h3>
-                  </div>
-                  <span class="service-arrow-glyph" aria-hidden="true">&rarr;</span>
-                </div>
-                <div class="service-row-body">
-                  <p>Transform your ideas into reality with our Mobile App Development services. We build user-friendly, high-performance apps for Android and iOS, tailored to your business needs.</p>
-                </div>
-              </article>
-
-              <!-- 03 -->
-              <article class="service-row-item" data-img="assets/images/service/service-image3.webp" data-title="WhatsApp API Integration" tabindex="0">
-                <div class="service-row-header">
-                  <div class="service-meta-group">
-                    <span class="service-index-num">03</span>
-                    <h3 class="service-title-text">WhatsApp API Integration</h3>
-                  </div>
-                  <span class="service-arrow-glyph" aria-hidden="true">&rarr;</span>
-                </div>
-                <div class="service-row-body">
-                  <p>Enhance customer engagement with WhatsApp API Integration. Automate messages, send notifications, and provide seamless customer support through the world's most popular messaging platform.</p>
-                </div>
-              </article>
-
-              <!-- 04 -->
-              <article class="service-row-item" data-img="assets/images/service/service-image4.webp" data-title="Cyber Security Services" tabindex="0">
-                <div class="service-row-header">
-                  <div class="service-meta-group">
-                    <span class="service-index-num">04</span>
-                    <h3 class="service-title-text">Cyber Security Services</h3>
-                  </div>
-                  <span class="service-arrow-glyph" aria-hidden="true">&rarr;</span>
-                </div>
-                <div class="service-row-body">
-                  <p>Protect your business from cyber threats with our Cyber Security Solutions. We offer vulnerability assessments, penetration testing, and robust security implementations to safeguard your digital assets.</p>
-                </div>
-              </article>
-
-              <!-- 05 -->
-              <article class="service-row-item" data-img="assets/images/service/service-image5.webp" data-title="Digital Marketing" tabindex="0">
-                <div class="service-row-header">
-                  <div class="service-meta-group">
-                    <span class="service-index-num">05</span>
-                    <h3 class="service-title-text">Digital Marketing</h3>
-                  </div>
-                  <span class="service-arrow-glyph" aria-hidden="true">&rarr;</span>
-                </div>
-                <div class="service-row-body">
-                  <p>Boost your online presence with our Digital Marketing Services. From SEO, social media marketing, and PPC to content marketing, we help your brand grow and reach the right audience effectively.</p>
-                </div>
-              </article>
-
-              <!-- 06 -->
-              <article class="service-row-item" data-img="assets/images/service/service-image6.webp" data-title="Web Development" tabindex="0">
-                <div class="service-row-header">
-                  <div class="service-meta-group">
-                    <span class="service-index-num">06</span>
-                    <h3 class="service-title-text">Web Development</h3>
-                  </div>
-                  <span class="service-arrow-glyph" aria-hidden="true">&rarr;</span>
-                </div>
-                <div class="service-row-body">
-                  <p>Build fast, responsive, and scalable websites with our Web Development services. We specialize in custom web design, e-commerce development, and CMS solutions to help your business stand out online.</p>
-                </div>
-              </article>
-            </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="why-num">01</span>
+            <h4 class="why-card-title">Certified Odoo Partner</h4>
+            <p class="why-card-desc">
+              We bring years of experience in implementing and customizing Odoo ERP solutions tailored to meet the unique needs of your business.
+            </p>
           </div>
 
-          <!-- Right: Large Adjacent Dynamic Visual -->
-          <div class="services-sticky-image-col">
-            <div class="service-large-image-frame">
-              <img src="assets/images/service/service-image1.webp" alt="Service Showcase" id="serviceHeroImg" class="service-hero-img">
-              <div class="service-image-caption-bar">
-                <span class="caption-service-title" id="serviceHeroTitle">Odoo ERP Implementation</span>
-                <span class="caption-badge-tag">HMRC PRACTICE</span>
-              </div>
-            </div>
+          <div class="why-card">
+            <span class="why-num">02</span>
+            <h4 class="why-card-title">Tailored Solutions for Your Business</h4>
+            <p class="why-card-desc">
+              Every business operates differently, and we provide customized Odoo solutions designed for seamless integration with your existing systems.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-num">03</span>
+            <h4 class="why-card-title">Expert Team of Certified Consultants &amp; Developers</h4>
+            <p class="why-card-desc">
+              Our certified Odoo consultants and skilled developers work closely with you to address business challenges and offer ongoing support and training.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-num">04</span>
+            <h4 class="why-card-title">Proven Track Record of Success</h4>
+            <p class="why-card-desc">
+              We have successfully completed projects across various domains such as Sales, CRM, Manufacturing, and more, helping businesses streamline operations and enhance efficiency.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-num">05</span>
+            <h4 class="why-card-title">On-Time Delivery &amp; Client-Centric Approach</h4>
+            <p class="why-card-desc">
+              We prioritize deadlines and ensure timely project delivery while maintaining a strong focus on client satisfaction.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-num">06</span>
+            <h4 class="why-card-title">24/7 Support &amp; Availability</h4>
+            <p class="why-card-desc">
+              Our commitment to your success extends beyond implementation. We offer round-the-clock support to ensure smooth business operations.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 06. DARK STATEMENT SECTION: ODOO PRACTICE (~15% Dark Accent) -->
-    <section class="section odoo-dark-section" id="odoo">
-      <div class="site-frame">
-        <div class="odoo-grid-2col">
+    <!-- 08. ODOO FEATURE SECTION (Dark Background Section) -->
+    <section class="section odoo-section" id="odoo">
+      <div class="container">
+        <div class="odoo-layout">
           <div>
             <div class="odoo-badge-wrap">
-              <img src="assets/images/logo/odoo_ready_partners_rgb.png" alt="Official Odoo Ready Partner" class="odoo-badge-img-box">
+              <div class="odoo-badge-white">
+                <img src="assets/images/logo/odoo_ready_partners_rgb.png" alt="Official Odoo Ready Partner">
+              </div>
             </div>
-            <span class="eyebrow eyebrow-light">ODOO ERP</span>
-            <h2 class="heading-editorial heading-editorial-light">
-              Seamless Odoo ERP Solutions for Your Business.
-            </h2>
-            <p class="odoo-statement-text">
+            <div class="section-tag" style="color: var(--accent);">ODOO PRACTICE</div>
+            <h2 class="section-title section-title-light">Seamless Odoo ERP Solutions for Your Business</h2>
+            <p class="odoo-desc">
               Optimize operations, boost efficiency, and scale effortlessly with our certified Odoo solutions.
             </p>
-            <a href="#contact" class="btn btn-light">Request Odoo Consultation</a>
+            <a href="#contact" class="btn btn-primary">Request Odoo Consultation</a>
           </div>
 
           <div class="odoo-pillars-stack">
-            <div class="odoo-pillar-block">
-              <span class="pillar-index">01</span>
-              <h4 class="pillar-title">Tailored Odoo Solutions to Fit Your Unique Business Needs</h4>
-              <p class="pillar-desc">From sales and inventory to accounting and CRM, we customize Odoo to work for you.</p>
+            <div class="odoo-pillar-card">
+              <h4 class="pillar-title"><span class="pillar-bullet">✦</span> Tailored Odoo Solutions to Fit Your Unique Business Needs</h4>
+              <p class="pillar-desc">
+                From sales and inventory to accounting and CRM, we customize Odoo to work for you.
+              </p>
             </div>
 
-            <div class="odoo-pillar-block">
-              <span class="pillar-index">02</span>
-              <h4 class="pillar-title">24/7 Expert Support &amp; Maintenance</h4>
-              <p class="pillar-desc">Reliable Support for Your Odoo System Anytime, Anywhere. Our dedicated team ensures your business runs smoothly with ongoing assistance and updates.</p>
+            <div class="odoo-pillar-card">
+              <h4 class="pillar-title"><span class="pillar-bullet">✦</span> 24/7 Expert Support &amp; Maintenance</h4>
+              <p class="pillar-desc">
+                Reliable Support for Your Odoo System Anytime, Anywhere. Our dedicated team ensures your business runs smoothly with ongoing assistance and updates.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 07. WHY CHOOSE US (Hairline Rule Grid) -->
-    <section class="section why-section" id="why-us">
-      <div class="site-frame">
-        <span class="eyebrow">WHY CHOOSE US</span>
-        <h2 class="heading-editorial">Built Around Your Business Needs.</h2>
-
-        <div class="why-grid-layout">
-          <div class="why-cell">
-            <span class="why-cell-idx">01</span>
-            <h4 class="why-cell-title">Certified Odoo Partner</h4>
-            <p class="why-cell-text">We bring years of experience in implementing and customizing Odoo ERP solutions tailored to meet the unique needs of your business.</p>
-          </div>
-
-          <div class="why-cell">
-            <span class="why-cell-idx">02</span>
-            <h4 class="why-cell-title">Tailored Solutions for Your Business</h4>
-            <p class="why-cell-text">Every business operates differently, and we provide customized Odoo solutions designed for seamless integration with your existing systems.</p>
-          </div>
-
-          <div class="why-cell">
-            <span class="why-cell-idx">03</span>
-            <h4 class="why-cell-title">Expert Team of Certified Consultants &amp; Developers</h4>
-            <p class="why-cell-text">Our certified Odoo consultants and skilled developers work closely with you to address business challenges and offer ongoing support and training.</p>
-          </div>
-
-          <div class="why-cell">
-            <span class="why-cell-idx">04</span>
-            <h4 class="why-cell-title">Proven Track Record of Success</h4>
-            <p class="why-cell-text">We have successfully completed projects across various domains such as Sales, CRM, Manufacturing, and more, helping businesses streamline operations and enhance efficiency.</p>
-          </div>
-
-          <div class="why-cell">
-            <span class="why-cell-idx">05</span>
-            <h4 class="why-cell-title">On-Time Delivery &amp; Client-Centric Approach</h4>
-            <p class="why-cell-text">We prioritize deadlines and ensure timely project delivery while maintaining a strong focus on client satisfaction.</p>
-          </div>
-
-          <div class="why-cell">
-            <span class="why-cell-idx">06</span>
-            <h4 class="why-cell-title">24/7 Support &amp; Availability</h4>
-            <p class="why-cell-text">Our commitment to your success extends beyond implementation. We offer round-the-clock support to ensure smooth business operations.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 08. LARGE IMAGE / BRAND BREAK -->
-    <section class="brand-image-break">
-      <img src="assets/images/banner/banner-image2.jpg" alt="Enterprise Architecture" class="brand-break-bg-img">
-      <div class="site-frame">
-        <div class="brand-break-inner">
-          <span class="brand-break-tag">ENTERPRISE DIGITAL TRANSFORMATION</span>
-          <h3 class="brand-break-statement">
-            “Delivering comprehensive business solutions that streamline operations and maximize productivity.”
-          </h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- 09. PROCESS (METHODOLOGY SECTION) -->
+    <!-- 09. PROCESS SECTION (3-Step Numbered Flow) -->
     <section class="section process-section" id="process">
-      <div class="site-frame">
-        <span class="eyebrow">OUR PROCESS</span>
-        <h2 class="heading-editorial">How We Deliver Excellence.</h2>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">METHODOLOGY</div>
+          <h2 class="section-title">Our Process to Deliver Excellence</h2>
+          <p class="section-desc">
+            A structured, transparent three-stage methodology from initial discovery to final deployment.
+          </p>
+        </div>
 
-        <div class="process-steps-row">
-          <div class="process-step-col">
-            <div class="step-num-bar">
-              <span class="step-num-serif">01</span>
-              <div class="step-bar-line"></div>
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-header">
+              <div class="process-step-badge">01</div>
             </div>
-            <h4 class="step-title">Understanding Your Vision</h4>
-            <p class="step-desc">
+            <h4 class="process-step-title">Understanding Your Vision</h4>
+            <p class="process-step-desc">
               We begin by sitting down with you to deeply understand your business goals, challenges, and customer expectations. Clear vision leads to purposeful execution.
             </p>
           </div>
 
-          <div class="process-step-col">
-            <div class="step-num-bar">
-              <span class="step-num-serif">02</span>
-              <div class="step-bar-line"></div>
+          <div class="process-card">
+            <div class="process-header">
+              <div class="process-step-badge">02</div>
             </div>
-            <h4 class="step-title">Strategic Planning &amp; Design</h4>
-            <p class="step-desc">
+            <h4 class="process-step-title">Strategic Planning &amp; Design</h4>
+            <p class="process-step-desc">
               Our expert team crafts tailored strategies and intuitive designs that align perfectly with your needs and industry standards. Smart planning is the foundation of great outcomes.
             </p>
           </div>
 
-          <div class="process-step-col">
-            <div class="step-num-bar">
-              <span class="step-num-serif">03</span>
-              <div class="step-bar-line"></div>
+          <div class="process-card">
+            <div class="process-header">
+              <div class="process-step-badge">03</div>
             </div>
-            <h4 class="step-title">Implementation &amp; Delivery</h4>
-            <p class="step-desc">
+            <h4 class="process-step-title">Implementation &amp; Delivery</h4>
+            <p class="process-step-desc">
               From development to final delivery, we ensure smooth execution, quality control, and complete client satisfaction. We don’t just deliver solutions – we deliver results.
             </p>
           </div>
@@ -416,130 +431,195 @@
       </div>
     </section>
 
-    <!-- 10. TESTIMONIALS (Spacious Editorial Three-Column) -->
+    <!-- 10. TESTIMONIALS -->
     <section class="section testimonials-section">
-      <div class="site-frame">
-        <span class="eyebrow">CLIENT REVIEWS</span>
-        <h2 class="heading-editorial">What They Say About Us</h2>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">TESTIMONIALS</div>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-desc">
+            Authentic client reviews from businesses transformed by our Odoo, mobile, and security solutions.
+          </p>
+        </div>
 
-        <div class="testimonials-row">
-          <div class="testimonial-block">
-            <p class="testimonial-quote">
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote-stars">★★★★★</div>
+            <p class="testimonial-text">
               “From cybersecurity to digital marketing, HMRC INDUSTRY PVT LTD has been a game-changer for our business. Their expertise is unmatched!”
             </p>
-            <div class="testimonial-author-meta">
-              <span class="author-name-text">Arvind Kumar</span>
-            </div>
+            <div class="testimonial-client">Arvind Kumar</div>
           </div>
 
-          <div class="testimonial-block">
-            <p class="testimonial-quote">
+          <div class="testimonial-card">
+            <div class="quote-stars">★★★★★</div>
+            <p class="testimonial-text">
               “HMRC INDUSTRY PVT LTD transformed our business operations with their Odoo ERP solutions. Their team is highly professional and provides excellent support!”
             </p>
-            <div class="testimonial-author-meta">
-              <span class="author-name-text">Rohit Mehta</span>
+            <div class="testimonial-client">Rohit Mehta</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-stars">★★★★★</div>
+            <p class="testimonial-text">
+              “The mobile app development services from HMRC were outstanding. They delivered a seamless, high-performance app that exceeded our expectations!”
+            </p>
+            <div class="testimonial-client">Pooja Sharma</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. FAQ ACCORDION -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">FAQ</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">
+            Quick factual answers regarding our certified Odoo practice, development services, and ongoing support.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <div class="faq-question">
+              <span>Are you an official certified Odoo partner?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, HMRC INDUSTRY PVT LTD is an official certified Odoo partner with skilled developers and consultants dedicated to implementing, customizing, and scaling your ERP systems.</p>
             </div>
           </div>
 
-          <div class="testimonial-block">
-            <p class="testimonial-quote">
-              “The mobile app development services from HMRC were outstanding. They delivered a seamless, high-performance app that exceeded our expectations!”
-            </p>
-            <div class="testimonial-author-meta">
-              <span class="author-name-text">Pooja Sharma</span>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What business domains do your Odoo solutions cover?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>We provide tailored solutions across multiple operational domains, including Sales, CRM, Inventory Management, Accounting, Manufacturing, and custom automated workflows.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you provide 24/7 post-implementation support?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, our commitment extends beyond delivery. We offer round-the-clock 24/7 technical support and ongoing maintenance to guarantee smooth, uninterrupted business operations.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What other technology services does HMRC offer?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Beyond Odoo ERP, we build custom Mobile Applications (Android &amp; iOS), integrate WhatsApp Messaging APIs, provide Cyber Security solutions, Digital Marketing, and custom Web Development.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 11. SPLIT CONTACT SECTION (Obsidian Left + Warm Ivory Right) -->
-    <section class="contact-split-wrap" id="contact">
-      <div class="contact-split-grid">
-        <div class="contact-col-dark">
-          <span class="eyebrow eyebrow-light">TALK TO US</span>
-          <h2 class="heading-editorial contact-dark-heading">Let's Discuss Your Next Project.</h2>
+    <!-- 12. CONTACT SECTION (Ruya 2-Column Contact Card) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info-col">
+            <div class="section-tag">GET IN TOUCH</div>
+            <h3>How May We Help You?</h3>
+            <p class="contact-info-desc">
+              Connect with our certified Odoo consultants and developers to discuss your enterprise requirements or schedule an introductory consultation.
+            </p>
 
-          <div class="contact-items-stack">
-            <div class="contact-entry">
-              <span class="entry-label">OFFICE LOCATION</span>
-              <p class="entry-val">VIP Colony, Ladwa, Kurukshetra, Haryana - 136132</p>
-            </div>
+            <div class="contact-meta-list">
+              <div class="meta-row">
+                <div class="meta-icon-sq">📍</div>
+                <div>
+                  <span class="meta-label-sm">OFFICE ADDRESS</span>
+                  <span class="meta-val-text">VIP Colony, Ladwa, Kurukshetra, Haryana - 136132</span>
+                </div>
+              </div>
 
-            <div class="contact-entry">
-              <span class="entry-label">DIRECT PHONE</span>
-              <p class="entry-val">
-                <a href="tel:+911169320163" class="phone-link-styled">+91-1169320163</a>
-              </p>
-            </div>
+              <div class="meta-row">
+                <div class="meta-icon-sq">📞</div>
+                <div>
+                  <span class="meta-label-sm">DIRECT PHONE</span>
+                  <span class="meta-val-text">
+                    <a href="tel:+911169320163" class="meta-phone-link">+91-1169320163</a>
+                  </span>
+                </div>
+              </div>
 
-            <div class="contact-entry">
-              <span class="entry-label">OPERATING HOURS</span>
-              <p class="entry-val">Mon - Sat: 10.00 AM - 7.00 PM</p>
+              <div class="meta-row">
+                <div class="meta-icon-sq">⏰</div>
+                <div>
+                  <span class="meta-label-sm">OPENING HOURS</span>
+                  <span class="meta-val-text">Mon - Sat: 10.00 AM - 7.00 PM</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="contact-col-light">
-          <h3 class="contact-form-title">How May We Help You?</h3>
-
-          <form class="editorial-form-grid" id="contactForm">
-            <div class="form-2col-row">
-              <div class="input-block">
-                <label for="userName" class="input-label">YOUR NAME *</label>
-                <input type="text" id="userName" name="userName" class="input-field" placeholder="Name" required>
+          <div class="contact-form-col">
+            <form class="contact-form-grid" id="contactForm">
+              <div class="form-group-duo">
+                <div class="form-input-group">
+                  <label for="userName">YOUR NAME *</label>
+                  <input type="text" id="userName" name="userName" class="form-ctrl" placeholder="Your Name" required>
+                </div>
+                <div class="form-input-group">
+                  <label for="userEmail">YOUR EMAIL *</label>
+                  <input type="email" id="userEmail" name="userEmail" class="form-ctrl" placeholder="name@company.com" required>
+                </div>
               </div>
-              <div class="input-block">
-                <label for="userEmail" class="input-label">YOUR EMAIL *</label>
-                <input type="email" id="userEmail" name="userEmail" class="input-field" placeholder="Email" required>
-              </div>
-            </div>
 
-            <div class="form-2col-row">
-              <div class="input-block">
-                <label for="userSubject" class="input-label">SUBJECT *</label>
-                <input type="text" id="userSubject" name="userSubject" class="input-field" placeholder="Odoo ERP, Mobile, Security..." required>
+              <div class="form-group-duo">
+                <div class="form-input-group">
+                  <label for="userSubject">SUBJECT *</label>
+                  <input type="text" id="userSubject" name="userSubject" class="form-ctrl" placeholder="Odoo ERP, Mobile, Security..." required>
+                </div>
+                <div class="form-input-group">
+                  <label for="userPhone">YOUR PHONE *</label>
+                  <input type="tel" id="userPhone" name="userPhone" class="form-ctrl" placeholder="+91..." required>
+                </div>
               </div>
-              <div class="input-block">
-                <label for="userPhone" class="input-label">YOUR PHONE *</label>
-                <input type="tel" id="userPhone" name="userPhone" class="input-field" placeholder="+91..." required>
+
+              <div class="form-input-group">
+                <label for="userMessage">MESSAGE *</label>
+                <textarea id="userMessage" name="userMessage" class="form-ctrl textarea-ctrl" rows="4" placeholder="Write Message" required></textarea>
               </div>
-            </div>
 
-            <div class="input-block">
-              <label for="userMessage" class="input-label">MESSAGE *</label>
-              <textarea id="userMessage" name="userMessage" class="textarea-field" rows="4" placeholder="Write message..." required></textarea>
-            </div>
-
-            <div class="form-btn-row">
-              <button type="submit" class="btn btn-primary">Send Message</button>
-              <span class="demo-form-note">Front-end demonstration only.</span>
-            </div>
-          </form>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+              <p class="form-note">Demonstration form. No backend submission required.</p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- 12. MINIMAL REFINED FOOTER -->
-  <footer class="site-footer-obsidian">
-    <div class="site-frame">
-      <div class="footer-top-columns">
+  <!-- 13. COMPACT FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns">
         <div>
-          <div class="footer-logo-wrap">
-            <img src="assets/images/logo/HMRC.png" alt="HMRC Logo" class="footer-logo-img">
-          </div>
-          <p class="footer-lead-text">
-            A certified Odoo partner providing intelligent business solutions, ERP implementation, mobile app development, cyber security, and 24/7 support.
+          <img src="assets/images/logo/HMRC.png" alt="HMRC Logo" class="footer-brand-logo">
+          <p class="footer-pitch">
+            HMRC INDUSTRY PVT LTD – A certified Odoo partner providing intelligent business solutions, ERP implementation, mobile app development, cyber security, and 24/7 support.
           </p>
-          <div class="footer-odoo-lockup">
+          <div class="footer-odoo-badge-wrap">
             <img src="assets/images/logo/odoo_ready_partners_rgb.png" alt="Odoo Ready Partner">
           </div>
         </div>
 
         <div>
-          <h5 class="footer-col-header">SERVICES</h5>
-          <ul class="footer-link-stack">
+          <h5 class="footer-heading">OUR SERVICES</h5>
+          <ul class="footer-nav-list">
             <li><a href="#services">Odoo ERP Implementation</a></li>
             <li><a href="#services">Mobile Application Development</a></li>
             <li><a href="#services">WhatsApp API Integration</a></li>
@@ -550,34 +630,40 @@
         </div>
 
         <div>
-          <h5 class="footer-col-header">QUICK LINKS</h5>
-          <ul class="footer-link-stack">
-            <li><a href="#about">About HMRC</a></li>
-            <li><a href="#about">Our Leadership</a></li>
-            <li><a href="#services">Our Capabilities</a></li>
-            <li><a href="#process">Work Process</a></li>
-            <li><a href="#why-us">Why Choose Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <h5 class="footer-heading">QUICK LINKS</h5>
+          <ul class="footer-nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Our Team</a></li>
+            <li><a href="#about">Our Partners</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#why-us">Career</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
 
         <div>
-          <h5 class="footer-col-header">VERIFIED PARTNERSHIPS</h5>
-          <ul class="footer-link-stack">
+          <h5 class="footer-heading">VERIFIED LISTINGS</h5>
+          <ul class="footer-nav-list">
             <li><span class="footer-static-item">Official Odoo Partner</span></li>
-            <li><span class="footer-static-item">IndiaMART TrustSEAL</span></li>
-            <li><span class="footer-static-item">Justdial Verified</span></li>
+            <li><span class="footer-static-item">IndiaMART Verified</span></li>
+            <li><span class="footer-static-item">Justdial Listed</span></li>
             <li><span class="footer-static-item">Upwork Enterprise</span></li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-base-row">
-        <span>&copy; 2025 HMRC INDUSTRY PVT LTD. All rights reserved.</span>
-        <span>Redesign concept for demonstration and evaluation.</span>
+      <div class="footer-bottom">
+        <span>© All Copyright 2025 HMRC INDUSTRY PVT LTD. All rights reserved.</span>
+        <span>Redesign concept for presentation and review.</span>
       </div>
     </div>
   </footer>
+
+  <!-- 14. FLOATING WHATSAPP / CALL BUTTON -->
+  <a href="https://wa.me/911169320163" target="_blank" rel="noopener noreferrer" class="floating-contact-btn" aria-label="Chat on WhatsApp">
+    <span class="floating-icon">💬</span>
+    <span>WhatsApp Support</span>
+  </a>
 
   <script src="app.js"></script>
 </body>
